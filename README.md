@@ -1,10 +1,12 @@
  <h1> Team Collaboration Hub</h1>
  
+
    ## Expense Swagger UI
    
    ![Expense Dashboard](./image/img1.png)
    <br>
     ![Expense Dashboard](./image/img2.png)
+   
 # Team Collaboration Hub
 
 ## Objective
@@ -53,12 +55,6 @@ Develop a secure and functional backend for the Team Collaboration Hub with user
    - Document all endpoints using Postman with sample requests and responses.
 
 
-   ## Expense Swagger UI
-   
-   ![Expense Dashboard](./image/img1.png)
-   <br>
-    ![Expense Dashboard](./image/img2.png)
-   
 
 ## Technologies Used
 - *Node.js*: Backend runtime environment.
