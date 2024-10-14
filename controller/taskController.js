@@ -89,16 +89,16 @@ exports.deleteTask = async (req, res) => {
 
 // Filters tasks
 exports.filterTasks = async (req, res) => {
-  const { assignedTo, status, dueDate } = req.query; // Get filters from query parameters
-  const query = {}; // Initialize query object
+  const { assignedTo, status, dueDate } = req.query; 
+  const query = {}; 
 
-  // Add filters based on query parameters
+  
   if (assignedTo) query.assignedTo = assignedTo;
   if (status) query.status = status;
   if (dueDate) query.dueDate = { $gte: new Date(dueDate) };
 
   try {
-    // Fetch tasks based on the query object
+   
     const tasks = await Task.find(query).populate("assignedTo", "name email");
     res.status(200).json(tasks);
   } catch (error) {
